@@ -1,0 +1,125 @@
+.row {
+  display: flex;
+  margin-top:5px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  position: relative;
+}
+body{
+ 
+   background-image:url('trianglify-lowres.png');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+.texting{
+color:black;	
+text-align: center;
+font-size: 40px;
+word-spacing: 400px;
+padding-bottom:0;
+font-size:25px;
+text-transform: uppercase;
+    text-align: center;
+	letter-spacing: 3px;
+font-family:Monospace;
+	
+}
+span{
+	color:red;
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  position:relative;
+  padding-left: 100;
+}
+
+li {
+	display: inline-block;
+  float: left;
+   padding-left: 100;
+}
+
+li a {
+	
+  
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: red;
+   width: 100%;
+}
+
+clip-me{
+	height:100%;
+	width:100%;
+	-webkit-clip-path:polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+	clip-path:polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+	
+}
+#polygon{
+	
+	
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+	position: relative;
+    overflow: hidden;
+	
+	 transition: transform 2s;
+	
+	
+}
+#polygon:hover{
+	
+	transform: scale(1.2);
+}
+
+   .content{
+	   visibility: hidden;
+	position: absolute;
+    top: 350px;
+    Left:200px;
+    bottom: 10px;
+    right: 200px;
+    background: transparent;
+	font-family:Monospace;
+    transform: scaleY();
+    transition:  transform .15s;
+    transform: translateY(-50%);
+	font-size:16px;
+	 text-transform: uppercase;
+    text-align: center;
+	letter-spacing: 3px;
+    padding: 15px;
+    color: blue;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;*/
+	}
+	.column:hover .content {
+  transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+
